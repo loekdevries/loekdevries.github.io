@@ -1,11 +1,27 @@
 <!DOCTYPE html> <!--kleurmodel-->
 <html> <!--dit is het html-element-->
 <head>
+    <style>
+    body {
+      transition: background-color 0.5s; 
+    }
+  </style>
     <title>kleurmodel</title>
     <meta charset="utf-8">
 </head>
 <body>
+    
     uitleg kleurmodellen
+
+    <button onclick="changeBackgroundColor()">Verander achtergrondkleur</button>
+
+  <script>
+    function changeBackgroundColor() {
+      const colors = ["#FF5733", "#33FF57", "#5733FF", "#FFFF33", "#33FFFF"]; // Voeg hier de gewenste kleuren toe
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      document.body.style.backgroundColor = randomColor;
+    }
+  </script>
 
 <ul>
     <li><a href="index.html">home</a></li>
