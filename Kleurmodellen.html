@@ -5,16 +5,27 @@
     body {
       transition: background-color 0.5s; 
     }
-          .right-align {
-      text-align: right; 
+
+        .center-right {
+      text-align: right; /* Hiermee wordt de tekst naar rechts uitgelijnd */
     }
+
+    .center-right-container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 100vh; /* Hiermee wordt de container de volledige hoogte van het scherm */
+    }
+          
   </style>
     <title>kleurmodel</title>
     <meta charset="utf-8">
 </head>
 <body>
 
-    <div class="right-align">
+    <div class="center-right-container">
+    <div class="center-right">
+        
 RGB & CMYK zijn kleurmodellen, waarmee kleuren opgebouwd kunnen worden.
     
 RGB staat voor de kleuren: Rood, Groen & Blauw.
@@ -24,6 +35,7 @@ Denk aan een computerscherm, waarbij een uitgeschakeld scherm zwart (kleurloos) 
 CMYK staat voor de kleuren: Cyaan, Magenta & Yellow.
 Door de kleuren cyaan, magenta & geel te mengen ontstaat geen zwart, hooguit donkerbruin, daarom is ook zwart (K) toegevoegd.
 Met deze vier kleuren in diverse doseringen te combineren met elkaar, zijn alle kleuren in het CMYK-spectrum na te bootsen.
+
     </div>
     
     <script>
