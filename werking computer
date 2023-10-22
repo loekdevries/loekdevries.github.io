@@ -1,1 +1,17 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-image: url(computer.jpeg); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hier komt de inhoud van je webpagina -->
+</body>
+</html>
