@@ -1,0 +1,21 @@
+Function Main
+    Declare Integer zoek
+    Declare Integer Array getallen[50]
+    Declare Integer start
+    Declare String tekst
+    Assign tekst = ""
+    For start = 0 to 49
+        Assign getallen[start] = random(99)
+        Assign tekst = tekst & getallen[start] & " "
+    End
+    Output tekst
+    Output "Typ het nummer dat je wil zoeken"
+    Input zoek
+    For start = 0 to 49
+        If getallen[start]=zoek
+            Output "Ja zit er in."
+            Output "op positie " & start +1
+        End
+    End
+    Output "Nee zit er niet in."
+End
