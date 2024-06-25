@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <body>
+      <script>
+        function main() {
+    var arraysize;
+    var hoeveelnummers;
+    
+    window.alert("Hoeveel random nummers wil je hebben.");
+    hoeveelnummers = window.prompt('Enter a value for hoeveelnummers');
+    arraysize = hoeveelnummers;
+    var bubbleArray = createArray(arraysize);
+    var teller;
+    var teller2;
+    var plaatshouder;
+    
+    teller = 0;
+    teller2 = 0;
+    for (teller = 0; teller <= arraysize - 1; teller++) {
+        bubbleArray[teller] = Math.floor(Math.random() * 100);
+    }
+    teller = 0;
+    window.alert("Dit zijn de ongesorteerde nummers.");
+    for (teller = 0; teller <= arraysize - 1; teller++) {
+        window.alert(bubbleArray[teller]);
+    }
+    teller = 0;
+    for (teller = 0; teller <= arraysize - 1; teller++) {
+        for (teller2 = 0; teller2 <= arraysize - 1 - teller - 1; teller2++) {
+            if (bubbleArray[teller2] > bubbleArray[teller2 + 1]) {
+                plaatshouder = bubbleArray[teller2];
+                bubbleArray[teller2] = bubbleArray[teller2 + 1];
+                bubbleArray[teller2 + 1] = plaatshouder;
+            }
+        }
+    }
+    teller = 0;
+    window.alert("Dit zijn de gesorteerde nummers.");
+    for (teller = 0; teller <= arraysize - 1; teller++) {
+        window.alert(bubbleArray[teller]);
+    }
+}
+
+      </script>
+    </body>
+  </head>
+</html>
