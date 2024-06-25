@@ -2,6 +2,7 @@
   <head>
     <body>
       <script>
+        main();
         function main() {
     var arraysize;
     var hoeveelnummers;
@@ -9,7 +10,7 @@
     window.alert("Hoeveel random nummers wil je hebben.");
     hoeveelnummers = window.prompt('Enter a value for hoeveelnummers');
     arraysize = hoeveelnummers;
-    var bubbleArray = createArray(arraysize);
+    var bubbleArray = new Array(arraysize);
     var teller;
     var teller2;
     var plaatshouder;
